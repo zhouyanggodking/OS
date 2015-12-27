@@ -1,0 +1,8 @@
+#pre-compile
+gcc -E hello.c -o hello.i   #cpp hello.c hello.i
+#compile
+gcc -S hello.i -o hello.s   #cc1 hello.i hello.s
+#assemble
+gcc -c hello.s -o hello.o   #as hello.s hello.o
+#linking
+gcc -o hello hello.o        #ld [system files and args] -o hello hello.o
