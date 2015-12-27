@@ -1,0 +1,4 @@
+gcc -shared -fPIC -o mathlib.so add.c sub.c  #position independent code
+
+gcc -o main main.c ./mathlib.so
+
