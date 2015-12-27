@@ -1,0 +1,4 @@
+gcc -shared -fPIC -o mathlib.so add.c sub.c  #position independent code
+
+gcc -rdynamic -o main main.c -ldl  # gcc linking option:  -llibrary, -ldl means linking dl library
+
