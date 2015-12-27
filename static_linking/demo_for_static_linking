@@ -1,0 +1,5 @@
+gcc -c add.c sub.c main.c
+
+ar -rcs mathlib.a add.o sub.o
+
+gcc -static -o main main.o mathlib.a
